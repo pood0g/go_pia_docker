@@ -1,0 +1,14 @@
+{
+    "bind-address-ipv4": "0.0.0.0",
+    "download-dir": "/downloads/complete",
+    "incomplete-dir": "/downloads/incomplete",
+    "incomplete-dir-enabled": true,
+    "rpc-bind-address": "127.0.0.1",
+    "rpc-enabled": true,
+    "rpc-password": "changeme",
+    "rpc-username": "admin",
+    "rpc-authentication-required": true,
+    "rpc-port": 9090,
+    "rpc-whitelist": "127.0.0.1",
+    "rpc-whitelist-enabled": true
+}
