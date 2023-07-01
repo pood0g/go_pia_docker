@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine
 
 RUN apk update && \
     apk upgrade && \
@@ -8,11 +8,11 @@ RUN apk update && \
     chown transmission:transmission /downloads /config
 COPY wg-quick /usr/bin/
 COPY ca.rsa.4096.crt /app
-COPY go_pia /app
 COPY start_services.sh /app
 COPY stunnel.conf /etc/stunnel
 COPY settings.json /config
 RUN chown transmission:transmission /config/settings.json
+COPY go_pia /app
 WORKDIR /app
 EXPOSE 9092
 
