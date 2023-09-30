@@ -13,6 +13,11 @@ All rights reserved to the original authors of wg-quick and any other code I hav
 Example for building and running the container.
 
 ```sh
+git clone https://github.com/pood0g/go_pia
+git clone https://github.com/pood0g/go_pia_wg_transmission
+cd go_pia
+CGO_ENABLED=0 go build --ldflags "-w -s"
+cd ../go_pia_wg_transmission
 cp ../go_pia/go_pia .
 docker build . -t go_pia
 docker run --name go_pia --cap-add NET_ADMIN -p 9091:9091 -v $HOME/Downloads:/downloads -it go_pia
