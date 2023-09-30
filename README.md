@@ -7,3 +7,14 @@ Contains a modified wg-quick bash script that works in Docker containers, change
 Feel free to contribute, fork, suggest new features.
 
 All rights reserved to the original authors of wg-quick and any other code I have used which is not explicitly mentioned here.
+
+## Running
+
+Example for building and running the container.
+
+```sh
+cp ../go_pia/go_pia .
+docker build . -t go_pia
+docker run --name go_pia --cap-add NET_ADMIN -p 9091:9091 -v $HOME/Downloads:/downloads -it go_pia
+docker start go_pia
+```
