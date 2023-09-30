@@ -13,6 +13,6 @@ COPY stunnel.conf /etc/stunnel
 COPY settings.json /config
 COPY go_pia /app/
 WORKDIR /app
-EXPOSE 9092
+EXPOSE 9091
 
 ENTRYPOINT [ "/app/start_services.sh" ]
