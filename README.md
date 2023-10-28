@@ -13,7 +13,12 @@ All rights reserved to the original authors of wg-quick and any other code I hav
 Example for building and running the container.
 
 ```sh
+# Building
 git clone https://github.com/pood0g/go_pia_docker
 cd go_pia_docker
 ./build.sh
+
+# Running
+docker run --name go_pia --cap-add NET_ADMIN -p 9091:9091 -v $HOME/Downloads:/downloads -it go_pia
+docker start go_pia
 ```

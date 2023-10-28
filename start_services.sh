@@ -7,7 +7,7 @@ cur_date () {
 if [ ! -f ./key.pem ] || [ ! -f ./cert.pem ]
 then
     echo "$(cur_date) First run, generating self signed TLS certificate."
-    openssl req -new -newkey rsa:4096 -nodes -x509 -keyout key.pem -out cert.pem -days 365 -subj "/CN=go_pia_wg_transmission"
+    openssl req -new -newkey rsa:4096 -nodes -x509 -keyout key.pem -out cert.pem -days 365 -subj "/CN=go_pia_docker"
     chown stunnel:stunnel key.pem cert.pem
 fi
 

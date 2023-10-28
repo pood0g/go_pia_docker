@@ -13,7 +13,7 @@ if [ ! -d go_pia ]
         git reset main --hard
 fi
 
-if [ -d go_pia ]
+if [ -f go.mod ]
     then
         CGO_ENABLED=0 go build --ldflags "-w -s"
         cd ..
