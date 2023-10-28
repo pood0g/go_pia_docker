@@ -15,7 +15,7 @@ fi
 
 if [ -d go_pia ]
     then
-        CGO_ENABLED=0 go build
+        CGO_ENABLED=0 go build --ldflags "-w -s"
         cd ..
     else
         echo "Something is wrong."
