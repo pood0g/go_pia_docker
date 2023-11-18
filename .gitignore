@@ -1,1 +1,5 @@
 go_pia
+go_pia_config.json
+test.sh
+key.pem
+cert.pem

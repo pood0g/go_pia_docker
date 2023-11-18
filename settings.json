@@ -24,6 +24,8 @@
     "idle-seeding-limit-enabled": false,
     "incomplete-dir": "/downloads/incomplete",
     "incomplete-dir-enabled": true,
+    "watch-dir": "/downloads/watch", 
+    "watch-dir-enabled": true,
     "lpd-enabled": true,
     "message-level": 4,
     "peer-congestion-algorithm": "",
