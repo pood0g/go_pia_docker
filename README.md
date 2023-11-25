@@ -20,5 +20,4 @@ cd go_pia_docker
 
 # Running
 docker run --name go_pia --cap-add NET_ADMIN -p 9091:9091 -v $HOME/Downloads:/downloads --restart=always -it go_pia
-docker start go_pia
 ```
